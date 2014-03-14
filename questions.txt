@@ -1,0 +1,51 @@
+Frontend Assessment Part 1
+HTML
+
+What does "semantic markup" mean?
+A language that tags content by it's type.
+
+What does a doctype do?
+Tells the browser what type of html is being used.
+
+Explain what standards and standards bodies are and why they are important.
+Standards for browsers and markup languages are in place so that they may be compatable. Standards bodies, like W3C, make sure that browsers and markup languages have these standards.
+
+What are CSS3 and HTML5? How are they different from previous standards? Why is this important?
+Previous versions of HTML and CSS would come out and then be replaced by successive versions. HTML5 and CSS3 are the last versions, no new version will replace them, they will just continue to be updated.
+
+What does a CSS reset do and why is it useful?
+A CSS reset is code that resets the base styles of html to be the same across different browsers.
+
+What is the box model? Draw a picture and label the portions here.
+see box_model image
+
+What is the difference between a relative, fixed, absolute, and statically positioned element? Feel free to draw pictures to explain your answer.
+see positioning image
+
+What is SASS and why do people use it?
+SASS is a CSS preprocessor which lets you set and use nesting, variables, and mixins (like functions) to make your CSS more DRY.
+
+Name one feature of SASS and explain why it is helpful.
+A mixin is a named bit of styling that you can reuse as many times as you want. Say you want all of your boxes to have rounded corners, you can use a mixin to do the border-radius part and include all the lines of code to make it compatable with all the browsers, then just pass in a number for the radius itself each time you use this bit of styling on any box in your page.
+
+Explain prototypal inheritance.
+A child class has the same prototype as its parent. This means that a child class has access to all of the functions defined for the parent class, as these are stored in the prototype. The only function that the child class does not store on the parent's prototype is the constructor function. If this were not the case it would be impossible for an instance of the child class to be created.
+
+What is a closure and how/why would you use one?
+A closure is a function defined within another function. This locks in the scope of the inner function so that when the inner function is called outside of the outer one, it will still have access to the variables within the outer function.
+
+What is an anonymous function? Give a typical usecase for one.
+an anonymous function is not named. Therefore it can only be called that one time when you are writing it. Often used when you are passing a function as a parameter. E.g. when you create an event handler using jQuery, all the actions that happen when the event happens are written out in an anonymous function that is passed to the 'on' function.
+
+Describe the difference between
+function Person(){} <-- a class definition
+var person = Person() <-- a function call stored in a variable
+var person = new Person() <-- a class constructor call, defines person as a new object of the Person class 
+
+
+
+Explain hoisting.
+When you define a variable anywhere in your file, JS hoists the definition (but not the value, so the value will be undefined until you assign it later on) to the top of the file. Basically it knows about the variable throughout the document and the value is just undefined before you get to the part of code where you actually define the variable in writing. This also happens with functions but the entire function definition is hoisted as long as you don't assign it to a variable in it's definition.
+
+What is the difference between === and ==?
+=== is more explicit. In JS == just checks to see if the two objects are of the same value but disregards their type. === checks that they are not only of the same value but also of the same type.
